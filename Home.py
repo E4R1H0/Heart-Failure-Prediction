@@ -26,24 +26,24 @@ with col3:
 
 ### Visualization ###
 
-df = pd.read_excel('./data/heart_failure.xlsx')
+# df = pd.read_excel('./data/heart_failure.xlsx')
 
-html_3 = """
-<div style="background-color:#0E1117;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
-<center><h3>Example data table</h3></center>
-</div>
-"""
-st.markdown(html_3, unsafe_allow_html=True)
-st.markdown("")
-st.write(df.head(10))
+# html_3 = """
+# <div style="background-color:#0E1117;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
+# <center><h3>Example data table</h3></center>
+# </div>
+# """
+# st.markdown(html_3, unsafe_allow_html=True)
+# st.markdown("")
+# st.write(df.head(10))
 
-html_4 = """
-<div style="background-color:#0E1117;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
-<center><h3>Count plot for various categorical features</h3></center>
-</div>
-"""
-st.markdown(html_4, unsafe_allow_html=True)
-st.markdown("")
+# html_4 = """
+# <div style="background-color:#0E1117;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
+# <center><h3>Count plot for various categorical features</h3></center>
+# </div>
+# """
+# st.markdown(html_4, unsafe_allow_html=True)
+# st.markdown("")
 
 # fig = plt.figure(figsize=(18, 15))
 # gs = fig.add_gridspec(3, 3)
