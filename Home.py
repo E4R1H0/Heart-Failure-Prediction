@@ -266,7 +266,7 @@ if st.button("ทำนายผล"):
           
       html_9 = """
       <div style="background-color:#0E1117;padding:20px;border: 3px solid #ffffff;">
-      <center><h3 style="border-bottom: 3px solid #ffffff;">มีความเสี่ยงในการเสียชีวิตมาก</h3></center>
+      <center><h3 style="border-bottom: 3px solid #ffffff;">มีความเสี่ยงในการเสียชีวิต</h3></center>
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">ภาวะหัวใจล้มเหลวเป็นภาวะแทรกซ้อนที่พบบ่อยของโรคหัวใจและหลอดเลือด จากข้อมูลของผู้ป่วยที่เสียชีวิตและไม่เสียชีวิตพบว่าค่าเฉลี่ยของข้อมูลต่างๆมีดังนี้</h6></left>
       <ul>
          <li>อายุเฉลี่ยของผู้ป่วยที่เสียชีวิตจากภาวะหัวใจล้มเหลวคือ 61 ปี และคนที่ไม่เสียชีวิตคือ 58 ปี</li>
