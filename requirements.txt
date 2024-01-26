@@ -1,0 +1,11 @@
+streamlit
+matplotlib
+numpy
+Pillow
+pandas
+pythainlp
+scikit-learn
+streamlit_lottie
+termcolor
+openpyxl
+DecisionTreeClassifier
