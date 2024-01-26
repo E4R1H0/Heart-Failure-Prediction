@@ -19,7 +19,7 @@ with col1:
     st.write("") 
 
 with col2:
-    st.image(".pic/1.jpg")
+    st.image("./pic/44.png")
 
 with col3:
     st.write("")
@@ -256,6 +256,7 @@ if st.button("ทำนายผล"):
       html_8 = """
       <div style="background-color:#0E1117;padding:20px;border: 3px solid #ffffff;">
       <center><h3 style="border-bottom: 3px solid #ffffff;">ไม่มีความเสี่ยงในการเสียชีวิต</h3></center>
+
       </div>
       """
       st.markdown(html_8, unsafe_allow_html=True)
