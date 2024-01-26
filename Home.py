@@ -246,18 +246,6 @@ if st.button("ทำนายผล"):
    X_train,X_test, y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=7)
    ds_model = DecisionTreeClassifier()
    ds_model.fit(X, y)
-   y_pred = ds_model.predict(X_test)
-   print('Classification Report:\n', classification_report(y_test, y_pred))
-
-    # สร้างและแสดง Confusion Matrix
-   cm = confusion_matrix(y_test, y_pred)
-   disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=ds_model.classes_)
-   disp.plot(cmap='viridis', values_format='d')
-   plt.title('Confusion Matrix')
-   plt.show()
-   modelg=ds_model.fit(X_train, y_train)
-
-
    x_input = np.array([[s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12]])
 
    out = ds_model.predict(x_input)
