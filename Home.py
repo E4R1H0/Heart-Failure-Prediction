@@ -241,7 +241,8 @@ if st.button("ทำนายผล"):
    
    X=df.drop(["DEATH_EVENT"],axis=1)
    y=df["DEATH_EVENT"]
-   X_train, X_test, y_train,y_test = train_test_split(X_df,y,test_size=0.25,random_state=7)
+   
+   X_train,X_test, y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=7)
    ds_model = DecisionTreeClassifier()
    ds_model.fit(X, y)
 
