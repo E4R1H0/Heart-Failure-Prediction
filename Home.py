@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeClassifier 
-
+from sklearn.model_selection import train_test_split
 
 html_1 = """
 <div style="background-color:#0E1117;margin-top:40px;padding:5px;border-radius:5px;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
@@ -238,10 +238,10 @@ s11 = st.selectbox("การสูบบุหรี่ (0 : ไม่ได้
 s12 = st.number_input("ระยtเวลาในการติดตามผู้ป่วย")
 
 if st.button("ทำนายผล"):
-
+   
    X=df.drop(["DEATH_EVENT"],axis=1)
    y=df["DEATH_EVENT"]
-
+   X_train, X_test, y_train,y_test = train_test_split(X_df,y,test_size=0.25,random_state=7)
    ds_model = DecisionTreeClassifier()
    ds_model.fit(X, y)
 
