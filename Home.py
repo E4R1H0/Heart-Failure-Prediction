@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn import preprocessing
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-import seaborn as sns
+
 from keras.layers import Dense, BatchNormalization, Dropout, LSTM
 from keras.models import Sequential
 from keras.utils import to_categorical
