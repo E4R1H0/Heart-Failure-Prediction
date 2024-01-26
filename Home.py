@@ -25,8 +25,7 @@ with col3:
     st.write("")
 
 ### Visualization ###
-
-# df = pd.read_excel('./data/heart_failure.xlsx')
+df = pd.read_excel('./data/heart_failure.xlsx')
 
 # html_3 = """
 # <div style="background-color:#0E1117;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
