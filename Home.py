@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeClassifier 
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 
 html_1 = """
 <div style="background-color:#0E1117;margin-top:40px;padding:5px;border-radius:5px;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
@@ -241,10 +242,20 @@ if st.button("ทำนายผล"):
    
    X=df.drop(["DEATH_EVENT"],axis=1)
    y=df["DEATH_EVENT"]
-   
+
    X_train,X_test, y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=7)
    ds_model = DecisionTreeClassifier()
    ds_model.fit(X, y)
+   y_pred = ds_model.predict(X_test)
+   print('Classification Report:\n', classification_report(y_test, y_pred))
+
+    # สร้างและแสดง Confusion Matrix
+   cm = confusion_matrix(y_test, y_pred)
+   disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=ds_model.classes_)
+   disp.plot(cmap='viridis', values_format='d')
+   plt.title('Confusion Matrix')
+   plt.show()
+   modelg=ds_model.fit(X_train, y_train)
 
 
    x_input = np.array([[s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12]])
