@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.naive_bayes import GaussianNB 
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 # from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 
@@ -248,7 +248,7 @@ if st.button("ทำนายผล"):
    y=df["DEATH_EVENT"]
 
    X_train,X_test, y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=7)
-   ds_model = GaussianNB()
+   ds_model = DecisionTreeClassifier()
    ds_model.fit(X, y)
    x_input = np.array([[s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12]])
 
