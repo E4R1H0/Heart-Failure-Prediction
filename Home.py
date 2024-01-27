@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeClassifier 
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
+# from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 
 html_1 = """
 <div style="background-color:#0E1117;margin-top:40px;padding:5px;border-radius:5px;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
@@ -215,6 +215,9 @@ html_6 = """
 st.markdown(html_6, unsafe_allow_html=True)
 st.markdown("")
 st.write(df.head(10))
+
+
+
 
 html_7 = """
 <div style="background-color:#0E1117;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;margin-top:20px;">
