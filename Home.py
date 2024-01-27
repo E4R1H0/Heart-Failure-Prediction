@@ -8,7 +8,8 @@ from sklearn.model_selection import train_test_split
 
 html_1 = """
 <div style="background-color:#0E1117;margin-top:40px;padding:5px;border-radius:5px;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
-<center><h4>การทำนายอัตราเสียชีวิตจากภาวะหัวใจล้มเหลวของผู้ป่วยโรคหัวใจและหลอดเลือดที่อายุมากกว่า 50 ปี</h4><h5>Predicting the Risk of Death from Heart Failure in Patients with Cardiovascular Disease over 50 years old</h5></center>
+<center><h4>การวิเคราะห์และทำนายความเสี่ยงในการเสียชีวิตจากภาวะหัวใจล้มเหลวของผู้ป่วยโรคหัวใจและหลอดเลือดที่อายุมากกว่า50ปี</h4><h5>
+Analysis and Prediction of Mortality Risk from Heart Failure in Patients with Cardiovascular Disease Aged Over 50 Years</h5></center>
 </div>
 """
 st.markdown(html_1, unsafe_allow_html=True)
