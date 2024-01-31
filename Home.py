@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 # from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 
 html_1 = """
-<div style="background-color:#0E1117;margin-top:40px;padding:5px;border-radius:5px;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
+<div style="background-color:#000080;margin-top:40px;padding:5px;border-radius:5px;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
 <center><h4>การวิเคราะห์และทำนายความเสี่ยงในการเสียชีวิตจากภาวะหัวใจล้มเหลวของผู้ป่วยโรคหัวใจและหลอดเลือดที่อายุมากกว่า50ปี</h4><h5>
 Analysis and Prediction of Mortality Risk from Heart Failure in Patients with Cardiovascular Disease Aged Over 50 Years</h5></center>
 </div>
@@ -209,7 +209,7 @@ df = pd.read_excel('./data/heart_failure.xlsx')
 ### Analysis ###
 
 html_6 = """
-<div style="background-color:#0E1117;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
+<div style="background-color:#000080;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
 <center><h3>Example data table</h3></center>
 </div>
 """
@@ -221,7 +221,7 @@ st.write(df.head(10))
 
 
 html_7 = """
-<div style="background-color:#0E1117;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;margin-top:20px;">
+<div style="background-color:#000080;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;margin-top:20px;">
 <center><h3>Prediction</h3></center>
 </div>
 """
@@ -257,7 +257,7 @@ if st.button("ทำนายผล"):
    if out[0]== 0 :
           
       html_8 = """
-      <div style="background-color:#0E1117;padding:20px;border: 3px solid #ffffff;">
+      <div style="background-color:#000080;padding:20px;border: 3px solid #ffffff;">
       <center><h3 style="border-bottom: 3px solid #ffffff;">ไม่มีความเสี่ยงในการเสียชีวิต</h3></center>
 
       </div>
@@ -269,7 +269,7 @@ if st.button("ทำนายผล"):
           
           
       html_9 = """
-      <div style="background-color:#0E1117;padding:20px;border: 3px solid #ffffff;">
+      <div style="background-color:#000080;padding:20px;border: 3px solid #ffffff;">
       <center><h3 style="border-bottom: 3px solid #ffffff;">มีความเสี่ยงในการเสียชีวิตจากภาวะหัวใจล้มเหลว</h3></center>
       <left><h6 style="text-indent: 30px;line-height: 1.5;padding-top:15px;">ภาวะหัวใจล้มเหลวเป็นภาวะแทรกซ้อนที่พบบ่อยของโรคหัวใจและหลอดเลือด จากข้อมูลของผู้ป่วยที่เสียชีวิตพบว่าค่าเฉลี่ยของข้อมูลต่างๆมีดังนี้ สามารถใช้ข้อมูลเหล่านี้เพื่อนำไปอ้างอิงเพื่อลดความเสี่ยงให้กับผู้ป่วย</h6></left>
       <ul>
